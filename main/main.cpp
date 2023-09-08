@@ -3,7 +3,17 @@
 using namespace std;
 int main()
 {
-	Car a("Audi A5", "White", 2021, 24000);
-	char* model = a.getModel();
-	cout << model << endl;
+	Car a;
+	system("chcp 1251");
+	a.input();
+	a.print();
+	a.getModel();
+	a.getColor();
+	a.getPrice();
+	a.getYear();
+	a.setModel("Audi A5");
+	a.setColor("White");
+	a.setPrice(24000);
+	a.setYear(2021);
+	a.print();
 }
